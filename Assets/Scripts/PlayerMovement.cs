@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 Instantiate(Projectile, Firepoint.position, Firepoint.rotation);
             }
-            timer = 0.1f;
+            timer = 0.14f;
         }
         HpText.text = "Health: " + health;
         ScoreText.text = "Score: " + Score;
