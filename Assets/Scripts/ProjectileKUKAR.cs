@@ -5,12 +5,6 @@ using UnityEngine;
 public class ProjectileKUKAR : MonoBehaviour
 {
     public float speed;
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
     private void OnBecameInvisible()
     {
         Destroy(gameObject);

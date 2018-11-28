@@ -7,13 +7,7 @@ public class EnemyFire : MonoBehaviour
     public Transform Firepoint;
     public GameObject Projectile;
     public float timer;
-    // Use this for initialization
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
         timer -= Time.deltaTime;

@@ -5,11 +5,6 @@ using UnityEngine;
 public class Tankenemyscript : StrongEnemyScript
 {
     public float enemyTankhp = 5;
-    // Use this for initialization
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     public override void Update()

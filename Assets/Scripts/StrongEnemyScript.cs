@@ -5,13 +5,6 @@ using UnityEngine;
 public class StrongEnemyScript : EnemyMovement
 {
     public float enemyhp = 2;
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     public override void Update()
     {
         base.Update();
