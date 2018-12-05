@@ -910,6 +910,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HpText: {fileID: 1169026446}
   ScoreText: {fileID: 550840328}
+  DeadText: {fileID: 0}
+  DeadCanvas: {fileID: 0}
   speed: 4
   speed1: 16
   Firepoint: {fileID: 13009749}
@@ -992,7 +994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff1091be4eec24848b5fb39cd1c2132a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scalar: 0.29
+  Scalar: 0.1
 --- !u!64 &1490052904
 MeshCollider:
   m_ObjectHideFlags: 0
