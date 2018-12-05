@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     public float speed;
-
+    public int Score = 1;
     public virtual void Update()
     {
         GetComponent<Rigidbody2D>().velocity = new Vector2(-speed, GetComponent<Rigidbody2D>().velocity.y);
@@ -20,7 +20,7 @@ public class EnemyMovement : MonoBehaviour
         if(collision.collider.tag == "Projectile")
         {
             Destroy(gameObject);
-            GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().Score += 1;
+            GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().Score += Score;
         }
         if (collision.collider.tag == "Player")
         {
@@ -29,7 +29,7 @@ public class EnemyMovement : MonoBehaviour
         if (collision.collider.tag == "Despawn")
         {
             Destroy(gameObject);
-            GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().health -= 1;
+            GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().health -= Score;
         }
     }
 }

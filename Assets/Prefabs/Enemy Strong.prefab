@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.5
+  Score: 2
   enemyhp: 2
 --- !u!212 &212100282530256056
 SpriteRenderer:

@@ -5,22 +5,9 @@ using UnityEngine;
 public class StrongEnemyScript : EnemyMovement
 {
     public float enemyhp = 2;
-    public override void Update()
-    {
-        base.Update();
-    }
 
     public override void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "Despawn")
-        {
-            Destroy(gameObject);
-            GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().health -= 2;
-        }
-        if (collision.collider.tag == "Player")
-        {
-            Destroy(gameObject);
-        }
         if (collision.collider.tag == "Projectile")
         {
             enemyhp -= 1;

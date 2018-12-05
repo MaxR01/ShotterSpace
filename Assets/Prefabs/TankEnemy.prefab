@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  Score: 4
   enemyhp: 2
   enemyTankhp: 5
 --- !u!212 &212439135914608346
